@@ -1,0 +1,846 @@
+﻿<!DOCTYPE html>
+<!-- link rel="stylesheet" type="text/css" href="css/main.css" -->
+<link rel="icon" href="favicon.ico">
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="description" content="Christo, Game Developer">
+  <meta name="keywords" content="Unity, game developer, gamedev, polygrammatic, super mixtape, Development, Software">
+  <meta name="author" content="Christo Nobbs">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christo - Polygrammatic</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <noscript>Sorry, your browser does not support important things!</noscript>
+
+  <style>
+    /* color: #00B2A3; /* Polygrammatic panotone green colour
+
+    html {
+      background-color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      text-align: center;
+      width: 98%;
+      background-color: #ffffff;
+    }
+
+    footer {
+      background-color: #ffffff;
+      background: #ffffff;
+      width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    h1 {
+      color: #00B2A3;
+    }
+
+    h1 {
+      font-size: medium;
+    }
+
+    #customFooter {
+      text-align: center;
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      background-color: #ffffff;
+    }
+
+    #content {
+      font-size: small;
+      margin-left: 20%;
+      width: 60%;
+      margin-right: 20%;
+    }
+
+    #media {
+      font-size: small;
+    }
+
+
+
+    // for scroll to top, not working
+    #goTopBtn {
+      border: none;
+      outline: none;
+      background-color: #fff;
+      border-radius: 0px;
+    }
+
+    #MediaTableRow {
+      display: table-row;
+      height: auto;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #MediaTableColLeft {
+      display: table-column;
+      float: left;
+      width: 20%;
+      font-weight: bold;
+      text-align: right;
+    }
+
+    #MediaTableColRight {
+      display: table-column;
+      float: left;
+      width: 78%;
+      margin-bottom: 10px;
+      text-align: left;
+      margin-left: 2%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      footer {
+        font-size: small;
+        background-color: #ffffff;
+      }
+
+      #customFooter {
+        font-size: small;
+        background-color: #ffffff;
+      }
+
+      #content {
+        font-size: small;
+        margin-left: 2%;
+        width: 96%;
+        margin-right: 2%;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      #customFooter {
+        font-size: small;
+        text-align: center;
+        position: static;
+        bottom: 0px;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        background-color: #ffffff;
+      }
+    }
+
+
+    div.mainBody {
+      font-size: small;
+      margin-left: auto;
+      margin-right: auto;
+      width: 600px;
+      float: center;
+    }
+
+    div.sectionRow {
+      clear: both;
+      display: table;
+      overflow: auto;
+      width: 100%;
+      display: table-row;
+    }
+
+    div.sectionContent {
+      float: center;
+      font-size: small;
+      margin-left: auto;
+      width: 600px;
+      margin-right: auto;
+    }
+
+    div.resumeThumb {
+      width: 300px;
+      height: auto;
+      float: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    // for the galleries
+    div.galleryContainer {
+      font-size: small;
+      margin-left: auto;
+      margin-right: auto;
+      width: 600px;
+      height: auto;
+      float: center;
+    }
+
+    div.gallery {
+      width: 180px;
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    div.gallery2 {
+      width: 380px;
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    div.gallery3 {
+      width: auto;
+      float: center;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    div.gallery img {
+      width: 180px;
+      height: 180px;
+    }
+
+    div.gallery2 img {
+      width: auto;
+      height: 180px;
+    }
+
+    div.gallery3 img {
+      width: auto;
+      height: 180px;
+    }
+
+    div.description {
+      padding-bottom: 200px;
+      float: left;
+      text-align: left;
+      height: auto;
+      width: 600px
+    } */
+  </style>
+
+</head>
+
+<body>
+
+  <!-- <div class="container">
+    <div class="row">
+        <div class="col-md-offset-5 col-md-2">
+          <a href="http://polygrammatic.com/">
+            <img src="img/logo Polygrammatic.png" alt="Polygrammatic Logo">
+          </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-3 col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-3 col-md-3"></div>
+        <div class="col-md-3"></div>
+    </div>
+</div> -->
+<div>
+<a href="http://polygrammatic.com/">
+  <img src="img/logo Polygrammatic.png" alt="Polygrammatic Logo">
+</a>
+</div>
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="offset-5-md col-md-2">
+          
+        </div>
+    </div>
+    <div class="row ContentImages">
+        <div class="col-md-offset-3 col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row ContentText">
+        <div class="col-md-offset-3 col-md-6"></div>
+    </div>
+    <div class="row Content1">
+        <div class="col-md-offset-3 col-md-6"></div>
+    </div>
+    <div class="row Content1">
+        <div class="col-md-offset-3 col-md-3"></div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+
+
+
+
+  <!-- ---------------------------------------------------------------------------------------------------- -->
+  <!-- ---------------------------------------------------------------------------------------------------- -->
+  <!-- ---------------------------------------------------------------------------------------------------- -->
+
+  <div style="padding: 200px; "></div>
+
+  <!-- Top Button -->
+  <div style="position: -webkit-sticky; position: sticky; top: 0px; background: #ffffff;">
+    <a href="http://polygrammatic.com/">
+      <img src="img/logo Polygrammatic.png" alt="Polygrammatic Logo">
+    </a>
+  </div>
+
+  <h1>Polygrammatic</h1>
+
+  <!-- ---------------------------------------------------------------------------------------------------- -->
+
+  <!-- whole body -->
+  <div class="MainBody">
+
+    <!-- Template Section -->
+    <div class="SectionRow">
+
+      <!-- Content (use rows and columns) -->
+      <div class="SectionContent">
+
+
+        <!-- Enter Content Here -->
+
+
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- Resume Section -->
+    <div class="SectionRow">
+
+      <!-- Content (use rows and columns) -->
+      <div class="SectionContent">
+
+        <!-- Top spacing between logo and resume thumbnail -->
+        <div style="padding: 50px;"></div>
+
+        <!-- Links -->
+        <a href="https://www.linkedin.com/in/chrisnobbs/" target="_blank" style="color: rgb(0,178,163)">
+          <font color="#00B2A3">LinkedIn</font>
+        </a>
+        &nbsp;
+        <a href="https://twitter.com/CH71ST0" target="_blank" style="color: rgb(0,178,163)">
+          <font color="#00B2A3">Twitter</font>
+        </a>
+        <br>
+
+        <!-- Resume thumbnail -->
+        <div class="resumeThumb">
+          <img src="img/marchresumethumbnail.png" alt="click to download">
+          <p>contact me for the latest 'Resume' version
+            <br>
+            25 March 2020, under constsruction, currently uploading my portfolio</p>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Top spacing between logo and resume thumbnail -->
+    <div style="padding: 50px;"></div>
+
+    <!-- PLAYERUNKNOWN PRODUCTIONS: Prologue Section -->
+    <div class="SectionRow">
+      <div class="SectionContent">
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/0lgQtGSliG4" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <div class="galleryContainer">
+          <div class="gallery">
+            <a target="_blank"
+              href="https://www.forbes.com/sites/davidthier/2019/12/12/playerunknown-on-prologue-why-it-isnt-pubg-2/#38d1229db189">
+              <img src="img/teampicturethumb.png" alt="">
+            </a>
+          </div>
+          <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/watch?v=0lgQtGSliG4">
+              <img src="img/prologuethumb.jpg" alt="">
+            </a>
+          </div>
+          <div class="gallery">
+            <a target="_blank" href="https://playerunknownproductions.net/">
+              <img src="img/pprodlogo.png" alt="">
+            </a>
+          </div>
+          <div class="description">
+            <p>
+              <b>Studio:</b> PLAYERUNKNOWN PRODUCTIONS
+              <br>
+              <b>Title:</b> Technical Game Designer
+              <br>
+              <b>Date:</b> 2018 - Present
+              <br>
+              <b>Project:</b> PLAYERUNKNOWN's Prologue (announced TGA 2019)
+              <br>
+              <b>Trailer:</b> <a href="https://www.youtube.com/watch?v=0lgQtGSliG4" target="_blank"
+                style="color: rgb(0,178,163)">
+                Prologue Teaser - YouTube</a>
+              <br>
+              <b>Key Focus:</b> System design
+              <br>
+              <br>
+              "A studio set up to explore, experiment and create new technologies, pipelines, and gameplay. Together
+              with a team of game developers and researchers, we explore new possibilities of interaction and connection
+              within the game space."
+              <br>
+              <a href="https://playerunknownproductions.net/" target="_blank" style="color: rgb(0,178,163)">
+                PLAYERUNKNOWN PRODUCTIONS</a>
+              <br>
+              <br>
+              <i></i>"prologue is an exploration of new technologies and gameplay. Our aim with this game is to give
+              players unique and memorable experiences, each and every time they play."</i>
+              <br>
+              <a href="https://playprologue.com/" target="_blank" style="color: rgb(0,178,163)">
+                playprologue.com</a>
+              <br>
+              <br>
+              <i>"Prologue refers to the beginning of a longer process for PlayerUnknown productions, a way of testing
+                and building new tech for something bigger."</i>
+              <br>
+              <a href="https://www.forbes.com/sites/davidthier/2019/12/12/playerunknown-on-prologue-why-it-isnt-pubg-2/"
+                target="_blank" style="color: rgb(0,178,163)">
+                Forbes Editors Pick</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Title: Kayak Section -->
+    <div class="SectionRow">
+      <div class="SectionContent">
+        <div class="galleryContainer">
+          <div class="gallery">
+            <img src="img/kayakinventory.png" alt="">
+          </div>
+          <div class="gallery">
+            <img src="img/kayaksystemmap.png" alt="">
+          </div>
+          <div class="gallery">
+            <img src="img/kayakwatermeshandboyancy.png" alt="">
+          </div>
+          <div class="description">
+            <p>
+              <b>Studio: </b>N/A, an indie collaboration of two
+              <br>
+              <b>Project: </b>Kayak
+              <br>
+              <b>Date: </b> 2020 - Present
+              <br>
+              <br>
+              Kayak is a first person survival experience where the player discharges themselves from society and goes
+              on a self-exploratory
+              journey across the ocean on a kayak to become free. After land is long gone, and supplies start to
+              dwindle, the paddler needs
+              to continue to navigate towards their destination, sustain, and survive, as they will not thrive. Enter
+              the player.
+              <br>
+              <br>
+              Utilising HDRP, Unity and considered game design, Kayak is an artistic piece within a dynamic setting
+              designed to take the player on a journey of their own.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Super Mixtape Section -->
+    <div class="SectionRow">
+      <div class="SectionContent">
+        <div class="galleryContainer">
+          <div class="gallery2">
+            <img src="img/MixDrawing.png" alt="">
+          </div>
+          <div class="gallery">
+            <img src="img/12356658_606276126180149_7090335413190904989_o.jpg" alt="">
+          </div>
+          <div class="description">
+            <p>
+              <b>Studio: </b> Polygrammatic Ltd
+              <br>
+              <b>Title: </b> Director / Developer
+              <br>
+              <b>Date:</b> 2015 / 2018
+              <br>
+              <b>Released Original IP: </b> Super Mixtape (Steam and Xbox One, Unity)
+              <br>
+              <b>Audio: </b> Jack Hey
+              <br>
+              <br>
+              Super Mixtape is a retro physics based rhythm-puzzle-platformer where you guide cassette tape ‘Mix’ across
+              a fully reversible
+              2D world of A-Sides and B-Sides, completing puzzles as you progress to find the perfect beat
+              <br>
+              <a target="_blank" href="https://store.steampowered.com/app/486660/Super_Mixtape/">
+                Super Mixtape on Steam</a>
+              <br>
+              <br>
+              Super Mixtape was shown at Rezzed 2015, EGX 2015, GDC 2016, E3 2017, PrePax 2017, and E3 2018
+              <br>
+              <br>
+              <b>Unreleased Projects: </b> Plastic Planet (a digital ecosystem single-scene game where the world has
+              been 3D printed.
+              The player has to balance the systems in order to stop natural disasters whilst pleasing the residents).
+              PocketCrawler (an infinite monochrome 2D diablo esque infinite rougue-like dungeon crawler made using only
+              primitive shapes)
+              <br>
+              <br>
+              <b>Scroll down for full Media Appearences</b>
+              <br>
+              <br>
+              <b>Highlighted Review: </b><a target="_blank" href="https://www.youtube.com/watch?v=2A5trAQ2-hs&t=326s">
+                Super Mixtape at EGX 2015</a>
+              <br>
+              <br>
+              <a target="_blank" href="img/SteamGreenlightMessages.png">Highlight of messages from Super Mixtape Steam
+                Greenlight,</a>
+              which was completed in 8 days
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- To The Woods Section -->
+    <div class="SectionRow">
+      <div class="SectionContent">
+        <div class="galleryContainer">
+          <div class="gallery3">
+            <img src="img/tothewoodsCharlieHey.png" alt="">
+          </div>
+          <br>
+          <div class="gallery">
+            <img src="img/cryenginewireframeworld.png" alt="">
+          </div>
+          <div class="gallery">
+            <img src="img/tothewoods.png" alt="">
+          </div>
+          <div class="gallery">
+            <img src="img/tothewoodsprojector.png" alt="">
+          </div>
+          <div class="description">
+            <p>
+              <b>Project: </b>To The Woods
+              <br>
+              Image by Charlie Hey (partner on To The Woods)
+              <br>
+              <b>Date: </b> 2013 / 2014
+              <br>
+              <b>Technologies: </b> CryEngine, then later, Unity3D
+              <br>
+              <br>
+              Cathartic indie game focussing on exploration of the mind. To The Woods was postponed to be revisited
+              another day due to being offered a position at Alacrity, and working on my Masters Degree
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GameJams -->
+    <div class="SectionRow">
+      <div class="SectionContent">
+        <p>
+          Hotel
+          <br>
+          <i>(Cove Ent., Cancelled)</i>
+          <br>
+          <br>
+          GameJam: Red Heifer
+          <br>
+          <i>(Winner, Unity3D)</i>
+          <br>
+          <br>
+          GameJam: Christmas Jam
+          <br>
+          <i>(2nd place, board game)</i>
+          <br>
+          <br>
+          GameJam: Shadow
+          <br>
+          <i>(3rd place, UE4)</i>
+        </p>
+      </div>
+    </div>
+
+    <!-- Template Section -->
+    <div class="SectionRow">
+      <div class="SectionContent">
+
+        <!-- Enter Content Here -->
+
+      </div>
+    </div>
+
+
+
+    <!-- Extra div at the bottom for safety -->
+  </div>
+</body>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------------------------------------- -->
+
+<div id="mainBody">
+  <div id="content">
+
+
+
+
+
+    <div style="padding: 100px;"></div>
+
+    <!-- MEDIA: make sure that media section is hidden until scrolled, but for now leave as a list of content. Make small and tight list. Perhaps a smaller font face too -->
+
+    <!-- Media Content -->
+    <script>
+      var clubit = {
+        title: "Clubit YouTube",
+        content: "In this video interview Charlotte from Clubit TV talks with Christo from the Cornwall based game development studio Polygrammatic.",
+        link: "https://www.youtube.com/watch?v=M0dftk_obsE"
+      };
+
+      var clubitReview = {
+        title: "Clubit Review",
+        content: "\“The basic gameplay functions are that of what anyone would expect of a platform game. Moving left and right as well as jumps and drops through the environment. However, there are some ingenious gameplay functions to this game. First off, the tape behaves like a tape!? If you move a certain amount of time on the ‘A’ side you the have the same time on the ‘B’Side. So this game isn’t just a point-to-point platformer. The player needs to use that functionality to navigate their way through the game. Christo tells us that his passion lays first and foremost in GAMEPLAY. And, from the fleeting amount of time we were able to spend at the consistently popular Super Mixtape stand, we could really see that. Both in the aforementioned twist on the generic platformer style and, that in the game ‘physics’. The movement of your noble ‘C60-esque’ recording / playback medium is executed with almost a graceful manner. Add to this the way Polygrammatic have engineered the environment to be ‘active’ in partnership with the soundtrack and we think you have a brilliant exposition of what a platform game can be!\”",
+        link: "http://www.clubit.tv/2015/10/interview-with-polygramatic-about-super-mixtape-at-egx-2015/"
+      };
+
+      var ColdSteelGames = {
+        title: "Cold Steel Games",
+        content: "<s>EGX 2015: Nintendo, The Yogscast and Super Mixtape!</s> - Offline",
+        link: "https://www.youtube.com/watch?v=eyuriaGYBc4"
+      };
+
+      var CubedGamers = {
+        title: "cubed gamers",
+        content: "Platformer. To jump on the green platforms, be playing the A-side of the mixtape. To jump on the Orange platforms, be playing the B-side of the mixtape. Flipping the mix flips the entire level, including the controls. Good luck. You’ll need it. <a href=\"https://i.imgur.com/pPXKUnj.png\" target=\"_blank\">2</a>",
+        link: "http://www.cubedgamers.com/2015/10/06/egx-2015-the-leftovers-part-2/"
+      };
+
+      var DevelopOnline = {
+        title: "Develop Online / mcvuk",
+        content: "Diaries From Alacrity Falmouth: No fruit without roots. Alacrity Falmouth student Chris Nobbs on building his own game studio, Polygrammatic. <a href=\"https://i.imgur.com/1MdXW0f.png\" target=\"_blank\">2</a> <a href=\"https://i.imgur.com/0ZpOGxU.png\" target=\"_blank\">3</a>",
+        link: "http://www.develop-online.net/opinions/diaries-from-alacrity-falmouth-no-fruit-without-roots/0207210"
+      };
+
+      var DiosCrew = {
+        title: "The DIOS Crew youtube",
+        content: "Polygrammatic are showing an initial build of pilot project S.M.T (Super Mixtape), soon to be announced. The Tech-Demo demonstrates an early preview of our exciting new game; a level built on a beat, a soundtrack completed through gameplay and good old-fashioned arcade action all round.",
+        link: "https://www.youtube.com/watch?v=rdTrYnbqAek"
+      };
+
+      var dlalastudios = {
+        title: "Craig Thomas dlalastudios",
+        content: "EGX game of the show for me - Super Mixtape by @polygrammatic. Retro style platformer, some awesome level mechanics! <a href=\"https://i.imgur.com/rrHm5lf.png\" target=\"_blank\">2</a>",
+        link: "https://twitter.com/shankymans/status/647710514156539904"
+      };
+
+      var EggboxInteractive = {
+        title: "Eggbox Interactive: Make your stand reinforce the theme",
+        content: "\"Just as in your demo, if your stand offers something visually distinctive it will make people pay attention. For instance, at EGX the stand showing Super Mixtape was kitted out with Commodore 64 'demo consoles', complete with tape decks. This inspired detail alone stopped people in their tracks to take a closer look before they'd even noticed the game itself.\"",
+        link: "http://www.eggboxinteractive.com/tips-for-showing-your-indie-game-at-conferences-part-2/"
+      };
+
+      var Egx = {
+        title: "EGX",
+        content: "Approximately 400 people played the game and a very small percentage of players walked away from the booth. It was commented on that they enjoyed the difficulty level of the generated puzzles and the complex physics that surrounds the gameplay. It was also commented on about the audio being very good. The players ranged from 7 years old up to 55+ years old, and a medium percentage of players completed the game. At EGX the game was the 5th most rated game out of 113 games, and scored 4.62 out of 5 on the EGX application. Following EGX the game got interest from 5 publishers, some small venture capital investors and someone in the music industry. I have been talking to two of the publishers and one of the VC investors as well as the guy in the music industry and have a meeting with him on Tuesday, but I need to get solid details before progressing with any of the deals, and they need to see a solid project plan for the rest of the game with fixed milestone dates in them. They will be fronting the cash, and the money won’t be released until a milestone is complete. I’m working on getting EGX costs back as well, as EGX cost me well over £2k to do in booth, swag etc. The game was the most popular single developer game at EGX. I managed to score some journos a few weeks before EGX and had people like machinima come around and do a small interview and some other cats, but we have got some really nice quotes and feedback to put alongside the documents I will be sending to publishers:",
+        link: "https://www.egx.net/egx/"
+      };
+
+      var FalmouthAlacrity = {
+        title: "Falmouth Alacrity / Launchpad",
+        content: "Polygrammatic is an individually managed, low-risk, creative indie development studio that will aim considered and innovative products at the PC and Console market.",
+        link: "https://www.falmouth.ac.uk/alacrity-falmouth/polygrammatic"
+      };
+
+      var GameGazm = {
+        title: "Game Gazm",
+        content: "\"My favourite game of EGX\" - Now Ministry Of Gamers",
+        link: "https://www.youtube.com/watch?v=2A5trAQ2-hs"
+      };
+
+      var GameGrinInterview = {
+        title: "Game Grin: Super Mixtape Interview",
+        content: "\"While attending last year’s EGX in Birmingham, I stumbled across a few games that really blew me away for their originality and just the sheer passion displayed by the developers creating them. Super Mixtape was one of those games. The game features a mix of challenging platforming and electronic music with the two overlapping to form the main premise of the game. You are able to swap between the two different sides of a cassette tape to change the environment around you; or for those born towards the late ‘90s, that probably made no sense whatsoever. I recently got in touch with Christopher Nobbs, developer of Super Mixtape - So we could talk about how the game was doing and what he had planned in the future.[cont.]\" <a href=\"https://i.imgur.com/2BZuALq.jpg\" target=\"_blank\">2</a> <a href=\"https://i.imgur.com/1vJLytg.jpg\" target=\"_blank\">3</a> <a href=\"https://i.imgur.com/V53hWb6.png\" target=\"_blank\">4</a>",
+        link: "https://www.gamegrin.com/articles/super-mixtape-interview/"
+      };
+
+      var IndiesOfEGX = {
+        title: "The Indies Of EGX Documentary",
+        content: "In September 2015, tons of independent video game developers took to the stands at EGX; the biggest video game expo in the UK! This documentary explores some of the best indie experiences at the show and briefly explores the indie game industry through the eyes of these developers.",
+        link: "https://www.youtube.com/watch?v=asotnaKVZQQ"
+      };
+
+      var InvisionGameCommunity = {
+        title: "Invision Game Community",
+        content: "With a nostalgic late 80’s narrative and levels built to a beat that you control, define your own path using refined physics, unique mechanics and a fully interactive soundtrack that shapes the very landscape and its formidable puzzles around you.",
+        link: "http://invisioncommunity.co.uk/2015/09/23/polygrammatic-present-playable-debut-of-super-mixtape-at-egx-2015/"
+      };
+
+      var LauraKateDale = {
+        title: "Laura Kate Dale",
+        content: "\"Found a new indie game called super mixtape. Very interesting game mechanically\" - Twitter",
+        link: "https://twitter.com/laurakbuzz"
+      };
+
+      var MachinimaSBOC = {
+        title: "Machinima sboc",
+        content: "\"like nothing I have seen before.\" - Super Mixtape swag included in YouTube giveaways. <a href=\"https://www.youtube.com/watch?v=aCl6n6htAUA\" target=\"_blank\">2</a> <a href=\"https://www.youtube.com/watch?v=hVx9-zHP3tM\" target=\"_blank\">3</a>",
+        link: "https://www.youtube.com/watch?v=0HMUQ6cOwUQ"
+      };
+
+      var MattGambell = {
+        title: "Matt Gambell, Skatanic Studios / Unity",
+        content: "\“Then there was Christo from Polygrammatic who had his game Super Mix Tape on display, back at Rezzed he was in a small space with his University showing off a prototype and getting careers advice. When I first booked onto the show, I remember him contacting me asking loads of questions about it and what he should do to get himself there. I turned up to set up on Wednesday and there he was with a double booth and a polished demo of his game, I was incredibly excited for him and anytime I caught up with him during the show he’d seemed to be getting a lot of great attention, which is always awesome to see.\”",
+        link: "http://www.skatanicstudios.co.uk/egx2015/"
+      };
+
+      var OtakuGamers = {
+        title: "Otaku Gamers",
+        content: "It throws everything you know about the standard platformer out of the window and creates its own rules.",
+        link: "http://www.otakugamers.uk/2015/10/09/super-mix-tape/"
+      };
+
+      var PlayerXP = {
+        title: "Player XP Guest User Impressions — Polygrammatic Limited",
+        content: "We’ve already talked a lot about how we think Player XP can help you however we know what’s more important is what our users think. As the first part in a series of guest impressions, we’ve asked one of our users to give you his impressions of Player XP…",
+        link: "https://medium.com/@playerxp/player-xp-guest-user-impressions-polygrammatic-limited-a4741db3d044"
+      };
+
+      var PodcastGamesUp = {
+        title: "Podcast - Games Up",
+        content: "Aaero and Super Mixtape - EGX Indie Month - Games Up Podcast. This week we are joined by Mad Fellows Games and Polygrammatic LTD",
+        link: "https://www.youtube.com/watch?v=wP4qCQOWnLQ"
+      };
+
+      var ProjectZomboid = {
+        title: "Project Zomboid",
+        content: "\“Amidst our thanks to Nasko, RJ, Thuztor, Tooks, Rhys, Connall, Turbo, Onto, Twiggy, RingoD and Kirrus for their amazing dedication, it would be remiss of us not to flag your attention towards some of the other AMAZING and passionate dev teams we’ve been surrounded by for the past few days. As such, we can assure you that a quick browse of any of the following would be more than worth your while: Theo and Lizzy, Super Mixtape, Fire Fu, Just Shapes and Beats, The Masterplan, Iron Fish and Riot: Civil Unrest. Oh, and playing on Valve’s HTC Vive is like looking into the face of frickin’ God.\” - Project Zomboid. <a href=\"http://steamcommunity.com/games/108600/announcements/detail/786233440454068344\" target=\"_blank\">2</a>",
+        link: "https://projectzomboid.com/blog/2015/09/post-egx/"
+      };
+
+      var ReadyUp = {
+        title: "Ready-Up",
+        content: "\“Then there were more indie games! We did have fun with the indie games. Featuring: Poncho, Super Mixtape, Masquerada, Prison Architect and Steamworld Heist. This quirky selection of games featured poncho-wearing robots, jumping and flipping mixtapes, RPG action, prison setups complete with electric chairs and gun-toting robots with bowler hats.\” - Ready Up. Super Mixtape was listed alongside games like prison architect… <a href=\"https://www.youtube.com/watch?v=7ZfHkx15Y2w\" target=\"_blank\">2</a>",
+        link: "http://ready-up.net/2015/10/02/egx-2015-audio-roundups-3/"
+      };
+
+      var Salis = {
+        title: "Salis \"Game of The Show\"",
+        content: "\“Get Ready Marty were going back to the 80's with Super Mixtape the game I have the most fun with ever an infuriating little platformer but with a wonderfully retro appearance and soundtrack this was selected as my game of the show and you will see why so remember be kind and please rewind this is SUPER MIXTAPE!\”",
+        link: "https://www.youtube.com/watch?v=YLkNHUPTAEg"
+      };
+
+      var SenshudoTV = {
+        title: "Senshudo TV",
+        content: "I had a chance to chat with the game’s designer, Christo of indie studio ‘Polygrammatic’ he settled on the current one, stating that early tests of the game proved confusing for and he explained to me that the control scheme went through multiple iterations before some players, in his own words \“people were switching the beat to jump and pressing ‘x’ so I deliberately assigned ‘x’ to nothing.\” - Super Mixtape was number 1 on their top 5 games.",
+        link: "http://www.senshudo.tv/news/the-best-of-the-rest-at-egx"
+      };
+
+      var SoundArchitect = {
+        title: "The Sound Architect",
+        content: "Another game that takes an interesting approach to audio is Super Mixtape. It is described as a 2D retro-fuelled, rhythm-based platformer with a fully reversible world. You play as a cassette tape who can flip and tumble its way around this strange world. The D-Pad gives you options to switch between layers of the current track that’s playing. Doing so alters the music as well as the environment, certain coloured platforms are only activated when a certain type of music is playing. It’s a curious way to use music as a game mechanic to alter the environment and is very effective once you get a hang of the movement/tumble controls. Another one to watch for the future! <a href=\"https://i.imgur.com/WkVDCCr.png\" target=\"_blank\">2</a>",
+        link: "http://www.thesoundarchitect.co.uk/egx-2015/"
+      };
+
+      var SpiderGrabBag = {
+        title: "Twitch Streamer - sπder's Grab Bag - Super Mixtape",
+        content: "Highlight from 4/7/2017 stream, where I played a variety of indie games. This game is my favorite of the bunch, hence why I actually took the time to highlight out its gameplay. I'd also like to clarify that the \"Made with Unity\" remark is totally a joke. I've played a ton of good games made in Unity and this is another one to add to that list.",
+        link: "https://www.youtube.com/watch?v=68TQ_7R5L0I"
+      };
+
+      var SquareEnixCollective = {
+        title: "Square-Enix Collective",
+        content: "\"this game is a fantastic nod towards nostalgia and the mechanics are suitably themed it is the right blend of difficulty and fun to keep people hooked for hours the jumping mechanics in particular are especially unique with the ability to jum from either end of the tape and adjust jump mid flight as well as change sides mid jump it makes for some challenging yet rewarding platforming the soundtrack is a tribute to the console games of old and this really needs a soundtrack version\" <a href=\"https://i.imgur.com/25D4UfE.png\" target=\"_blank\">2</a>",
+        link: "https://collective.square-enix.com/projects/196/super-mixtape#feedback"
+      };
+
+      var SuperMixtapeFanArt = {
+        title: "Super Mixtape Fan Art",
+        content: "This is a short video I just threw over to @chrisnobbs on twitter replying to his post about facial characteristics!",
+        link: "https://www.youtube.com/watch?v=GXCxchkqk8o"
+      };
+
+      var TheMentalAttic = {
+        title: "The Mental Attic",
+        content: "\"Super Mixtape was a weird one, a game where you play as a cassette tape. It’s weird, quirky, but also really fun.\"",
+        link: "http://thementalattic.com/2015/09/30/egx-2015-day-three/"
+      };
+
+      /*
+      var MediaEntry = {title:"Title", content:"content3", link:"link"};
+      <a href=\"\" target=\"_blank\"></a>
+      */
+
+      var ObjArray = [GameGazm, GameGrinInterview, EggboxInteractive, IndiesOfEGX, OtakuGamers, SoundArchitect,
+        SpiderGrabBag, TheMentalAttic, SenshudoTV, CubedGamers, MattGambell, ProjectZomboid, Salis, dlalastudios,
+        LauraKateDale, PodcastGamesUp, MachinimaSBOC, DevelopOnline, DiosCrew, clubit, clubitReview,
+        SquareEnixCollective, PlayerXP, FalmouthAlacrity, SuperMixtapeFanArt, ReadyUp, InvisionGameCommunity,
+        ColdSteelGames
+      ]
+      /* Egx */
+    </script>
+
+    <div id="media">
+      <!-- <div style="position: -webkit-sticky; position: sticky; padding: 0; top: 75px; background: #ffffff;"> -->
+      <h1>Media Appearences</h1>
+      <!-- </div> -->
+      <p>
+        Selection of media appearences for Christo, Polygrammatic and Super Mixtape
+        <br><i>Click the title for direct link (opens in new tab). Additional links numbered in description(s).</i>
+      </p>
+      <br>
+
+      <p id="MediaAppearences"></p>
+      <script>
+        var OutputText = "";
+        for (i = 0; i < ObjArray.length; i++) {
+          OutputText += "<div id=\"MediaTableRow\">" +
+            "<a href=\"" + ObjArray[i].link +
+            "\"target=\"_blank\" style=\"color: rgb(0,178,163)\"><font color=\"#00B2A3\">" +
+            "<div id=\"MediaTableColLeft\"> " + ObjArray[i].title + "</div>" + "</font></a>" +
+            "<div id=\"MediaTableColRight\"> " + ObjArray[i].content + "</div>" + "</div>";
+        }
+
+        document.getElementById("MediaAppearences").innerHTML = OutputText;
+      </script>
+
+      <br>
+      <a href="http://store.steampowered.com/app/486660/Super_Mixtape/" target="_blank"><img
+          src="img/footer logo Steam.png" alt="Valve Steam Logo"></a>
+      &nbsp&nbsp&nbsp
+      <img src="img/footer logo Xbox_2014_horizontal_rgb.png" alt="Microsoft Xbox 2014 RGB Logo">
+      </p>
+
+      <div style="padding: 10% 0; background: #ffffff;"></div>
+    </div>
+  </div>
+</div>
+</body>
+
+<footer>
+  <div id="customFooter">
+    <div style="padding: 1px 0; background: #ffffff;"></div>
+    © 2020 Polygrammatic Limited<br>
+    <div style="padding: 2px 0; background: #ffffff;"></div>
+
+  </div>
+</footer>
+
+</html>
